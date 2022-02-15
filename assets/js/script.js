@@ -1,35 +1,38 @@
-document.addEventListener("DOMContentLoaded", function(){
+document.addEventListener("DOMContentLoaded", function () {
     let buttons = document.getElementsByTagName("button");
-    for (let button of buttons){
-        button.addEventListener('click', function() {
-            if (this.getAttribute("data-type")  === "submit") {
-                alert("You clicked Submit!");
-            } else {
-                    let gameType = this.getAttribute("data-type"); 
+    for (let button of buttons) {
+        button.addEventListener('click', function () {
+                if (this.getAttribute("data-type") === "submit") {
+                    alert("You clicked Submit!");
+                } else {
+                    let gameType = this.getAttribute("data-type");
                     alert(`You clicked ${gameType}`);
-
+                }
             }
-        }
-        
-        
-        
         )
-
     }
 })
+/** 
+ * The game "loop", called when the script is loaded 
+ * and after the user's answer has been processed */
+function runGame() {
 
-function runGame(){}
+    //creates 2 randeom numbers between 1 and 25;
+    let num1 = Math.floor(Math.random * 25) + 1;
+    let num2 = Math.floor(Math.random * 25) + 1;
 
-function checkAnswer(){}
+}
 
-function calculateCorrectAnswer(){}
+function checkAnswer() {}
 
-function incrementScore(){}
+function calculateCorrectAnswer() {}
 
-function incrementWrongAnswer(){}
+function incrementScore() {}
 
-function displayAdditionQuestion(){}
+function incrementWrongAnswer() {}
 
-function displaySubtractQuestion(){}
+function displayAdditionQuestion() {}
 
-function displayMultiplyQuestion(){}
+function displaySubtractQuestion() {}
+
+function displayMultiplyQuestion() {}
